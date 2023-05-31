@@ -51,8 +51,29 @@
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-web-api</artifactId>
-            <version>8.0.0</version>
+            <version>${jakartaee}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- так как wildfly из коробки не дружит с jakarta.annotation-api, оставляем по умолчанию библиотеку javax.annotation-api для работы аннотаций PreDestroy и PostConstruct -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <!-- у разработчика библиотеки в github уже выкачена версия 6.6.0, в главном репозитории maven ещё висит старая версия 6.5.0 -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>6.5.0</version>
         </dependency>
     </dependencies>
 

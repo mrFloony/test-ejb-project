@@ -1,1 +1,5 @@
 /.idea/
+/target/endorsed/jakarta.jakartaee-api-8.0.0.jar
+/target/maven-archiver/pom.properties
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/test-ejb-project-1.0-SNAPSHOT.jar
